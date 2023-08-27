@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-color: whitesmoke;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+}
+
+.instructors {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.logo {
+    width: 200px;
+}
+
+nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+.content {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.content h1 {
+    font-size: 60px;
+    font-weight: normal;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.content p {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.gray {
+    color: gray;
+}
+
+.orange {
+    color: orangered;
+}
+
+.white {
+    color: white;
+}
+
+.bg-green {
+    color: #65d777;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+form {
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.pointer-cursor {
+    cursor: pointer;
+}
+
+.kontainer {
+    display: flex;
+    width: 100%;
+}
+
+.section {
+    flex: 1;
+    /* border: 1px solid #ccc; */
+    padding: 20px;
+}
+
+.margin-top-2 {
+    margin-top: 2%;
+}
+
+.margin-top-12 {
+    margin-top: 12%;
+}
+
+.margin-top-7 {
+    margin-top: 7%;
+}
+
+.margin-left-5 {
+    margin-left: 5%;
+}
+
+.margin-top-3 {
+    margin-top: 3%;
+}
+
+.font-size-24 {
+    font-size: 24px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.input {
+    margin: 0 24%;
+    padding: 32px 0;
+}
+
+.kontainer p {
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.content input {
+    height: 50px;
+}
+
+.margin-top-60 {
+    margin-top: 60px;
+}
+
+.margin-bottom-25 {
+    margin-bottom: 25px;
+}
+
+.instructors p a {
+    text-decoration: none;
+}
+
+.instructors p a:hover {
+    text-decoration: underline;
+    color: orangered;
+}
+
+.padding-30 {
+    padding: 30px;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.box {
+    width: 40%;
+    margin-left: 30%;
+    height: 190px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+}
+
+.width-35 {
+    width: 35%;
+}
+
+.height-50 {
+    height: 50px;
+}
+
+footer {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+.foot {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.custom-hr {
+    padding: 0 10%;
+    padding-top: 70px;
+}

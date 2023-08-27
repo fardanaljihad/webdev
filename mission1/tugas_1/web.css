@@ -1,0 +1,86 @@
+.item1 { 
+    grid-area: biruTua; 
+    background-color: darkblue;
+}
+
+.item2 { 
+    grid-area: hitam; 
+    background-color: black;
+}
+
+.item3 {
+    grid-area: coklat; 
+    background-color: chocolate;
+}
+
+.item4 { 
+    grid-area: putih;
+    background-color: white;
+}
+
+.item5 { 
+    grid-area: merahMuda; 
+    background-color: pink;
+}
+
+.item6 { 
+    grid-area: biru; 
+    background-color: blue;
+}
+
+.item7 { 
+    grid-area: kuning;
+    background-color: yellow; 
+}
+
+.item8 { 
+    grid-area: merah;
+    background-color: red; 
+}
+
+.item9 { 
+    grid-area: ungu; 
+    background-color: purple;
+}
+
+.item10 { 
+    grid-area: hijau;
+    background-color: green; 
+}
+
+.item11 { 
+    grid-area: oren; 
+    background-color: orange;
+}
+
+.item12 { 
+    grid-area: abu; 
+    background-color: grey;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'biruTua biruTua hitam hitam hitam hitam'
+  'biruTua biruTua coklat coklat putih merahMuda'
+  'biruTua biruTua coklat coklat putih biru'
+  'kuning kuning ungu ungu putih biru'
+  'merah merah ungu ungu abu abu'
+  'hijau hijau oren oren abu abu';
+  grid-gap: 3px;
+  background-color: black;
+  padding: 3px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.grid-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0;
+    font-size: 30px;
+}
+
+.teks-putih {
+    color: white;
+}
