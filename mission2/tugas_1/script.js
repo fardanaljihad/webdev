@@ -1,10 +1,10 @@
 const items = [
-    {namaBarang: "Barang 1", harga: 30000},
-    {namaBarang: "Barang 2", harga: 40000},
-    {namaBarang: "Barang 3", harga: 50000},
-    {namaBarang: "Barang 4", harga: 60000},
-    {namaBarang: "Barang 5", harga: 70000},
-    {namaBarang: "Barang 6", harga: 80000},
+    {namaBarang: "Weekly Dia Pass", harga: 20581, img: "https://cdn1.codashop.com/S/content/common/images/denom-image/MLBB/MLBB-Diamond-Pass_Popular-tag%20(2).png"},
+    {namaBarang: "Twilight Pass", harga: 99900, img: "https://cdn1.codashop.com/S/content/common/images/denom-image/MLBB/100x100/TwilightPass_MLBB.png"},
+    {namaBarang: "40 Diamonds", harga: 10000, img: "https://cdn1.codashop.com/S/content/common/images/denom-image/MLBB/100x100/50orless_MLBB_Diamonds.png"},
+    {namaBarang: "975 Diamonds", harga: 169000, img: "https://cdn1.codashop.com/S/content/common/images/denom-image/MLBB/100x100/500orMore_MLBB_Diamonds.png"},
+    {namaBarang: "2010 Diamonds", harga: 290000, img: "https://cdn1.codashop.com/S/content/common/images/denom-image/MLBB/100x100/1500orMore_MLBB_Diamonds.png"},
+    {namaBarang: "4830 Diamonds", harga: 369000, img: "https://cdn1.codashop.com/S/content/common/images/denom-image/MLBB/100x100/5000orMore_MLBB_Diamonds.png"},
 ];
 
 // Mendapatkan elemen dengan id list-item
@@ -14,10 +14,10 @@ const listItem = document.getElementById('list-item');
 for( i = 0; i < items.length; i++ ) {
     const newItem = `
         <div class="card ml-6" style="width: 16rem;">
-            <img src="assets/images/sample.png" class="card-img-top">
+            <img src="${items[i].img}" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">${items[i].namaBarang}</h5>
-                <p class="card-text">Rp${items[i].harga}</p>
+                <p class="card-text">IDR ${items[i].harga.toLocaleString("id-ID")}</p>
                 <div class="row">
                     <div class="col-4 d-flex justify-content-center align-items-center mb-3">
                         <a class="btn btn-primary btn-sq-min d-flex justify-content-center align-items-center" onclick="min('kuantitas-${i+1}')">-</a>
