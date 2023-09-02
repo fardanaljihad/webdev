@@ -1,0 +1,51 @@
+.items {
+    border: 2px solid #dedede;
+}
+
+.btn-sq-min {
+    width: 30px; /* Atur lebar tombol */
+    height: 35px; /* Atur tinggi tombol */
+    margin-left: 91%;
+}
+
+.btn-sq-plus {
+    width: 30px; /* Atur lebar tombol */
+    height: 35px; /* Atur tinggi tombol */
+    margin-right: 91%;
+}
+
+.btn-custom {
+    width: 140px;
+    margin-left: 15%;
+}
+
+.ml-6 {
+    margin-left: 6px;
+}
+
+.ml-45 {
+    margin-left: 45px;
+}
+
+.mt-6 {
+    margin-top: 6px;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.mycart {
+    border: 2px solid #dedede; 
+    padding: 10px; 
+    margin: 10px; 
+    width: 30%;
+}
+
+.border {
+    border: 2px solid #dedede; 
+}
+
+.bold {
+    font-weight: bold;
+}
