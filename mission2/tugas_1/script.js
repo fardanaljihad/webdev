@@ -68,14 +68,14 @@ function addToCart(id) {
     item.classList.add('row');
     const detailItem = `
         <div class="col-3">
-            <img src="assets/images/sample.png" width="60" height="60" class="border">
+            <img src="${items[id-1].img}" width="60" height="60" class="border">
         </div>
         <div class="col-6">
             <h5>${items[id-1].namaBarang}</h5>
-            <p>IDR ${items[id-1].harga} x ${kuantitas.value}</p>
+            <p>IDR ${items[id-1].harga.toLocaleString("id-ID")} x ${kuantitas.value}</p>
         </div>
         <div class="col-3 d-flex justify-content-center align-items-center">
-            <p class="bold">IDR ${items[id-1].harga * kuantitas.value}</p>
+            <p class="bold">IDR ${(items[id-1].harga * kuantitas.value).toLocaleString("id-ID")}</p>
         </div>
         <hr>
     `;
@@ -93,9 +93,9 @@ function addToCart(id) {
 
 function invoice() {
     const detailInvoice = `
-    <p class="bold ml-45">IDR ${totalHarga}</p>
-    <p class="bold ml-45">IDR ${totalHarga * 11 / 100}</p>
-    <p class="bold ml-45">IDR ${totalHarga + (totalHarga * 11 / 100)}</p>
+    <p class="bold ml-45">IDR ${totalHarga.toLocaleString("id-ID")}</p>
+    <p class="bold ml-45">IDR ${(totalHarga * 11 / 100).toLocaleString("id-ID")}</p>
+    <p class="bold ml-45">IDR ${(totalHarga + (totalHarga * 11 / 100)).toLocaleString("id-ID")}</p>
     `;
     myinvoice.innerHTML = detailInvoice;
 }
