@@ -1,13 +1,6 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 .game {
-    width: 600px;
-    height: 200px;
+    width: 900px;
+    height: 300px;
     border: 1px solid black;
     margin: auto;
 }
@@ -18,7 +11,8 @@ body {
     background-image: url(assets/images/dog.png);
     background-size: 50px 50px;
     position: relative;
-    top: 150px;
+    top: 250px;
+    left: 20px;
 }
 
 .jump {
@@ -26,11 +20,11 @@ body {
 }
 
 @keyframes jump {
-    0% { top: 150px; }
-    30% { top: 130px; }
-    50% { top: 80px; }
-    70% { top: 130px; }
-    100% { top: 150px; }
+    0% { top: 250px; }
+    30% { top: 230px; }
+    50% { top: 180px; }
+    70% { top: 230px; }
+    100% { top: 250px; }
 }
 
 
@@ -38,16 +32,16 @@ body {
     width: 30px;
     height: 40px;
     position: relative;
-    top: 110px;
-    left: 570px;
+    top: 210px;
+    left: 870px;
 
     background-image: url(assets/images/cactus.png);
     background-size: 30px 40px;
 
-    animation: block 1s infinite linear;
+    animation: block 3s infinite linear;
 }
 
 @keyframes block {
-    0% { left: 570px; }
+    0% { left: 870px; }
     100% { left: -20px; }
 }
