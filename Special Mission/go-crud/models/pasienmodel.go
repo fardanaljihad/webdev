@@ -1,6 +1,7 @@
 package models
 
 import (
+	"time"
 	"fmt"
 	"database/sql"
 
@@ -35,4 +36,40 @@ func (p *PasienModel) Create(pasien entities.Pasien) bool {
 	lastInsertId, _ := result.LastInsertId()
 
 	return lastInsertId > 0
+}
+
+func (p *PasienModel) FindAll() ([]entities.Pasien, error) {
+
+	rows, err := p.conn.Query("select * from pasien")
+	if err != nil {
+		return []entities.Pasien{}, err
+	}
+	defer rows.Close()
+
+	var dataPasien []entities.Pasien
+	for rows.Next() {
+		var pasien entities.Pasien
+		rows.Scan(&pasien.Id,
+			&pasien.NamaLengkap,
+			&pasien.NIK,
+			&pasien.JenisKelamin,
+			&pasien.TempatLahir,
+			&pasien.TanggalLahir,
+			&pasien.Alamat,
+			&pasien.NoHp)
+		
+		if pasien.JenisKelamin == "1" {
+			pasien.JenisKelamin = "Laki-laki"
+		} else {
+			pasien.JenisKelamin = "Perempuan"
+		}
+
+		tgl_lahir, _ := time.Parse("2006-01-02", pasien.TanggalLahir)
+		pasien.TanggalLahir = tgl_lahir.Format("02-01-2006")
+
+		dataPasien = append(dataPasien, pasien)
+	}
+
+	return dataPasien, nil
+
 }
