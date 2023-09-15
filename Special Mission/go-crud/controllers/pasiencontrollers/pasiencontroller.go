@@ -1,7 +1,6 @@
 package pasiencontroller
 
 import (
-	"fmt"
 	"html/template"
 	"net/http"
 
